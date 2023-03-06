@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "json-server --watch db/db.json",
     "dev": "nodemon server.js",
     "seed": "cp db/seeds.json db/db.json"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "nodemon": "1.18.4"
